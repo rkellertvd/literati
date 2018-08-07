@@ -5,8 +5,8 @@ global-css:
   css:
     theme:
       css/base/base.css: {}
-      css/components/component.css: {}
       css/layout/layout.css: {}
+      css/components/component.css: {}
       css/state/state.css: {}
       css/theme/theme.css: {}
 
