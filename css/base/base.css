@@ -344,3 +344,29 @@ template {
 [hidden] {
   display: none;
 }
+
+
+/* TYPOGRAPHY */
+
+body {
+  font-size: 16px;
+  line-height: 1.5; /* 16×1.5=24 */
+}
+
+p {
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: sans-serif;
+  font-weight: bold;
+}
+
+pre, code {
+  font: monospace;
+}
