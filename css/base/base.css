@@ -354,7 +354,9 @@ body {
 }
 
 p {
+  font: serif;
   font-size: 1rem;
+  color: #333333;
 }
 
 h1,
@@ -365,6 +367,7 @@ h5,
 h6 {
   font: sans-serif;
   font-weight: bold;
+  color: #373D3F;
 }
 
 pre, code {
