@@ -346,7 +346,10 @@ template {
 }
 
 
-/* TYPOGRAPHY */
+/* ==========================================================================
+TYPOGRAPHY
+============================================================================= */
+
 
 body {
   font-size: 16px;
@@ -357,7 +360,7 @@ p {
   font: serif;
   font-size: 1rem;
   color: #333333;
-  margin: 0 0 1.5em 0;
+  margin: 1.5em 0 1.5em 0;
 }
 
 h1,
@@ -374,3 +377,15 @@ h6 {
 pre, code {
   font: monospace;
 }
+
+/* SMALL 600 px */
+@media (min-width: 37.5em) {}
+
+/* MEDIUM 900 px */
+@media (min-width: 56.25em) {}
+
+/* LARGE 1200 px */
+@media (min-width: 75em) {}
+
+/* EXTRA LARGE 1800 px */
+@media (min-width: 112.5em) {}
