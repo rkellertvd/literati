@@ -355,6 +355,7 @@ TYPOGRAPHY
 body {
   font-size: 16px;
   line-height: 1.5; /* 16×1.5=24 */
+  background: url('../../images/gridbg24.gif') repeat 0 0; /* Background grid – vertical rhythm */
 }
 
 p {
@@ -379,9 +380,27 @@ h6 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2rem; /* 32 px */
   line-height: 1.5;
   margin: 0.75em 0 0 0;
+}
+
+h2 {
+  font-size: 1.625rem; /* 26 px */
+  line-height: 1.154;
+  margin: 0.857em 0 0 0;
+}
+
+h3 {
+  font-size: 1.375em; /* 22 px */
+  line-height: 1.136;
+  margin: 0.5em 0 0 0;
+}
+
+h4 {
+  font-size: 1.125em;
+  line-height: 1.111em
+  margin: 0.333em 0 0 0;
 }
 
 pre, code {
