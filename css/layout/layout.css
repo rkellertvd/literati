@@ -1,1 +1,18 @@
 /* LAYOUT CSS; macro arrangement of a web page, including any grid systems */
+
+/* Branding */
+
+.site-logo img {
+  float: left;
+  height: 3rem;
+  width: auto;
+  margin: 0 1em 1.5em 0;
+}
+
+.site-name {
+  font-size: 2em;
+}
+
+.site-slogan {
+  font-size: 1.25em;
+}
