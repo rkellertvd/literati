@@ -350,9 +350,11 @@ template {
 TYPOGRAPHY
 ============================================================================= */
 
-/* Default CSS rule – mobile first */
+/* Default CSS rule – mobile first
+*  Typographic-scale: Augmented fourth
+*/
 
-body {
+html {
   font-size: 16px;
   line-height: 1.5; /* 16×1.5=24 */
   background: url('../../images/gridbg24.gif') repeat 0 0; /* Background grid – vertical rhythm */
@@ -360,9 +362,9 @@ body {
 
 p {
   font: serif;
-  font-size: 1rem;
   color: #333333;
-  margin: 1.5em 0 1.5em 0;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 /* Heading
@@ -380,32 +382,70 @@ h6 {
 }
 
 h1 {
-  font-size: 2rem; /* 32 px */
-  line-height: 1.5;
-  margin: 0.75em 0 0 0;
+  font-size: 2.8125rem; /* 45 px */
+  line-height: 1.5rem;
+  margin: 1.5em 0 3em 0;
 }
 
 h2 {
-  font-size: 1.625rem; /* 26 px */
-  line-height: 1.154;
-  margin: 0.857em 0 0 0;
+  font-size: 2rem; /* 32 px */
+  line-height: 1.5rem;
+  margin: 1.5rem 0 1.5rem 0;
 }
 
 h3 {
-  font-size: 1.375em; /* 22 px */
-  line-height: 1.136;
-  margin: 0.5em 0 0 0;
+  font-size: 1.44rem; /* 23 px */
+  line-height: 1.5rem;
+  margin: 1.5rem 0 0 0;
 }
 
 h4 {
-  font-size: 1.125em;
-  line-height: 1.111em
-  margin: 0.333em 0 0 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 1.5rem 0 0 0;
+}
+
+h5 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 1.5rem 0 0 0;
+}
+
+p, ul, ol, pre, table, blockquote {
+  margin: 0 0 1.5rem 0;
+}
+
+ul ul, ol ol, ul ol, ol ul {
+  margin: 0;
+}
+
+hr {
+  border: 1px solid;
+  margin: 0;
+}
+
+a, b, i, strong, em, small, code {
+  line-height: 0;
 }
 
 pre, code {
   font: monospace;
 }
+
+sub, sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
 
 /* SMALL 600 px */
 @media (min-width: 37.5em) {}
