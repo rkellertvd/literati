@@ -43,11 +43,11 @@
  * @see html.html.twig
  */
 #}
-<div class="layout-container">
+<header role="banner">
+  {{ page.header }}
+</header>
 
-  <header role="banner">
-    {{ page.header }}
-  </header>
+<div class="layout-container">
 
   {{ page.primary_menu }}
   {{ page.secondary_menu }}
