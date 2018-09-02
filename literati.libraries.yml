@@ -1,7 +1,7 @@
 # LITERATI LIBRARIES
 
 global-css:
-  version: "1.0.x"
+  version: 1.0.x
   css:
     theme:
       css/base/base.css: {}
@@ -11,8 +11,8 @@ global-css:
       css/theme/theme.css: {}
 
 global-js:
-  version: "1.0.x"
+  version: 1.0.x
   js:
     js/script.js: {}
-    dependencies:
-      - core/jquery
+  dependencies:
+    - core/jquery
