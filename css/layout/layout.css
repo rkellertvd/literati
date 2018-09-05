@@ -1,5 +1,11 @@
 /* LAYOUT CSS; macro arrangement of a web page, including any grid systems */
 
+
+.header {
+  height: 72px;
+  background: #DBDBDB;
+  border-bottom: 1px solid black;
+}
 /* Branding */
 
 .site-logo img {
@@ -11,8 +17,10 @@
 
 .site-name {
   font-size: 2em;
+  margin: 0;
 }
 
 .site-slogan {
   font-size: 1.25em;
+  margin: 0;
 }
