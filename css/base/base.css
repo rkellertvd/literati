@@ -419,6 +419,21 @@ ul ul, ol ol, ul ol, ol ul {
   margin: 0;
 }
 
+/* Navigation menu lists
+   ========================================================================== */
+
+nav ul {
+  list-style-type: none;
+}
+
+/* Task menu lists
+   ========================================================================== */
+
+.primary,
+.secondary {
+  list-style-type: none;
+}
+
 hr {
   border: 1px solid;
   margin: 0;
