@@ -1,4 +1,4 @@
-{# Main menu template #}
+{# Menu template adding class names based on menu name #}
 
 {% import _self as menus %}
 
@@ -6,18 +6,18 @@
 We call a macro which calls itself to render the full tree.
 @see http://twig.sensiolabs.org/doc/tags/macro.html
 #}
-{{ menus.menu_links(items, attributes, 0, menu_name) }}
+{{ menus.menu_links(items, attributes, 0, menu_name) }} {# Passing menu_name as an argument to the macro #}
 
 {% macro menu_links(items, attributes, menu_level, menu_name) %}
   {% import _self as menus %}
-  {# 1. #}
+  {# Setting classes for menu_name in a new variable #}
   {%
   set menu_classes = [
   'menu',
   'menu-' ~ menu_name|clean_class,
   ]
   %}
-  {# 1. #}
+  {# Setting classes for menu_name__submenu in a new variable #}
   {%
   set submenu_classes = [
   'menu',
@@ -26,12 +26,12 @@ We call a macro which calls itself to render the full tree.
   %}
   {% if items %}
     {% if menu_level == 0 %}
-      <ul{{ attributes.addClass(menu_classes) }}> {# 1. #}
+      <ul{{ attributes.addClass(menu_classes) }}> {# Adding class to the top level ul element #}
     {% else %}
-      <ul{{ attributes.removeClass(menu_classes).addClass(submenu_classes) }}> {# 1. #}
+      <ul{{ attributes.removeClass(menu_classes).addClass(submenu_classes) }}> {# Adding class to the ul elements below top #}
     {% endif %}
     {% for item in items %}
-      {# 1. #}
+      {# Setting classes for li elements #}
       {%
     set item_classes = [
     'menu-' ~ menu_name|clean_class ~ '__item',
@@ -40,14 +40,13 @@ We call a macro which calls itself to render the full tree.
     item.is_active_trail ? 'menu-' ~ menu_name|clean_class ~ '__item--active--trail',
     ]
     %}
-    {# 1. #}
+    {# Setting classes for link elements #}
     {% set link_classes = [
     'menu-' ~ menu_name|clean_class ~ '__link',
     ]
     %}
-      <li{{ item.attributes.addClass(item_classes) }}> {# 1. #}
-      {# 1. #}
-
+      <li{{ item.attributes.addClass(item_classes) }}> {# Adding classes for li elements #}
+      {# Removing li classes and adding link classes #}
         {{ link(
         item.title,
         item.url,
