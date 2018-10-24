@@ -422,17 +422,52 @@ ul ul, ol ol, ul ol, ol ul {
 /* Navigation menu lists
    ========================================================================== */
 
-nav ul {
+ul.menu {
   list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul.menu-account,
+ul.menu-footer,
+ul.menu-main,
+ul.menu-tools {
+  border: 1px solid #f00;
+}
+
+ul.menu-main {
+  display: flex;
+  width: 100%;
+  font-weight: bold;
+}
+
+li.menu-main__item {
+  flex: 1 1 100%;
+  float: left;
+}
+
+li.menu-main__item a {
+  display: block;
+  line-height: 1em;
+  padding: 0.5em;
+  background-color: #ddd;
+}
+
+ul.menu-account {
+  font-weight: normal;
+}
+
+li.menu-account__item {
+  background-color: #ddd;
+}
+
+li.menu-account__item a {
+  text-decoration: underline dotted;
 }
 
 /* Task menu lists
    ========================================================================== */
 
-.primary,
-.secondary {
-  list-style-type: none;
-}
 
 hr {
   border: 1px solid;
