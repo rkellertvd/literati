@@ -425,6 +425,7 @@ ul ul, ol ol, ul ol, ol ul {
 ul.menu {
   list-style-type: none;
   padding: 0;
+  margin: 0;
   overflow: hidden;
 }
 
@@ -432,33 +433,39 @@ ul.menu-account,
 ul.menu-footer,
 ul.menu-main,
 ul.menu-tools {
+  display: flex;
   border: 1px solid #f00;
+  background-color: #ddd;
 }
 
 ul.menu-main {
-  display: flex;
   width: 100%;
   font-weight: bold;
 }
 
 li.menu-main__item {
-  flex: 1 1 100%;
-  float: left;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100%;
 }
 
-li.menu-main__item a {
+li.menu-main__item a,
+li.menu-account__item a,
+li.menu-footer__item a,
+li.menu-tools__item a {
   display: block;
   line-height: 1em;
   padding: 0.5em;
-  background-color: #ddd;
 }
 
 ul.menu-account {
+  flex-direction: column;
   font-weight: normal;
 }
 
 li.menu-account__item {
-  background-color: #ddd;
+  background-color: #999;
 }
 
 li.menu-account__item a {
