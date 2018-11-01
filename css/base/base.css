@@ -472,6 +472,39 @@ li.menu-account__item a {
   text-decoration: underline dotted;
 }
 
+/* Pager menu list
+   ========================================================================== */
+
+.pager {
+  display: flex;
+  justify-content: center;
+  background-color: #aef;
+}
+
+ul.pager__items {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pager__items li {
+  margin: 0 1px;
+}
+
+.pager__items a {
+  display: block;
+  padding: 1em;
+  border: 1px solid #999;
+  border-radius: 0;
+  text-decoration: none;
+}
+
+.pager_items a[aria-current="page"] {
+  background-color: #333;
+  color: #fff;
+}
+
 /* Task menu lists
    ========================================================================== */
 
