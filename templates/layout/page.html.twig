@@ -43,9 +43,14 @@
  * @see html.html.twig
  */
 #}
+
+<!-- ______________________ HEADER _______________________ -->
+
 <header class="header" role="banner">
   {{ page.header }}
 </header>
+
+<!-- ______________________ MAIN _______________________ -->
 
 <div class="layout-container">
 
@@ -54,9 +59,13 @@
 
   {{ page.breadcrumb }}
 
-  {{ page.highlighted }}
+  {% if page.highlighted|render %}
+    <div id="highlighted">{{ page.highlighted }}</div>
+  {% endif %}
 
-  {{ page.help }}
+  {% if page.help|render %}
+    <div id="help">{{ page.help }}</div>
+  {% endif %}
 
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
@@ -78,6 +87,8 @@
     {% endif %}
 
   </main>
+
+  <!-- ______________________ FOOTER _______________________ -->
 
   {% if page.footer %}
     <footer role="contentinfo">
