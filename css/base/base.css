@@ -352,6 +352,8 @@ TYPOGRAPHY
 
 /* Default CSS rule – mobile first
 *  Typographic-scale: Augmented fourth
+*  Space-scale: 2 (xxs), 4 (xs), 8 (s), 16 (m), 32 (l), 64 (xl)
+*  Space-concept space-inset, space-inset-squish, space-inset-stretch, space-stack, space-inline
 */
 
 html {
@@ -383,33 +385,36 @@ h6 {
 
 h1 {
   font-size: 2.8125rem; /* 45 px */
-  line-height: 1.5rem;
+  line-height: 1.5rem; /* 45×1.5=67.5 */
   margin: 1.5em 0 3em 0;
 }
 
 h2 {
   font-size: 2rem; /* 32 px */
-  line-height: 1.5rem;
+  line-height: 1.5rem; /* 32×1.5=48 */
   margin: 1.5rem 0 1.5rem 0;
 }
 
 h3 {
   font-size: 1.44rem; /* 23 px */
-  line-height: 1.5rem;
+  line-height: 1.5rem; /* 23×1.5=34.5 */
   margin: 1.5rem 0 0 0;
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: 1rem; /* 16 px */
   line-height: 1.5rem;
   margin: 1.5rem 0 0 0;
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 1rem; /* 16 px */
   line-height: 1.5rem;
   margin: 1.5rem 0 0 0;
 }
+
+/* Content
+   ========================================================================== */
 
 p, ul, ol, pre, table, blockquote {
   margin: 0 0 1.5rem 0;
@@ -506,7 +511,6 @@ ul.pager__items {
 
 /* Task menu lists
    ========================================================================== */
-
 
 hr {
   border: 1px solid;
