@@ -424,6 +424,20 @@ ul ul, ol ol, ul ol, ol ul {
   margin: 0;
 }
 
+/* Basic elements
+   ========================================================================== */
+
+blockquote {
+  margin-left: 1rem;
+  padding-left: 1rem ;
+  border-left: 5px solid red;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
 /* Navigation menu lists
    ========================================================================== */
 
