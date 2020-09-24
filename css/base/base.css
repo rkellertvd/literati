@@ -111,6 +111,23 @@ img {
   height: auto;
 }
 
+/* Image rendering
+   ========================================================================== */
+
+.auto {
+  image-rendering: auto;
+}
+
+.pixelated {
+  -ms-interpolation-mode: nearest-neighbor;
+  image-rendering: pixelated;
+}
+
+.crisp-edges {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
 /* Navigation menu lists
    ========================================================================== */
 
