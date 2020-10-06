@@ -12,7 +12,13 @@ literati.narrow:
     - 1x
 literati.wide:
   label: wide
-  mediaQuery: 'all and (min-width: 960px)'
+  mediaQuery: 'all and (min-width: 960px) and (max-width: 1279px)'
   weight: 2
+  multipliers:
+    - 1x
+literati.superwide:
+  label: superwide
+  mediaQuery: 'all and (min-width: 1280px)'
+  weight: 3
   multipliers:
     - 1x
